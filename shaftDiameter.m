@@ -26,7 +26,7 @@ d0 = input("Initial Guess for d: ");
 while true %Will iterate until value converges
     d = ((16 * n / pi) * ((1 / Se) * sqrt(4 * (Kf * Ma)^2 + 3 * (Kfs * Ta)^2) + ...
     (1 / Sut) * sqrt(4 * (Kf * Mm)^2 + 3 * (Kfs * Tm)^2)))^(1/3);
-    dd = abs(d - d0); %Compare calculated value to the guessed value
+    dd = abs(d - d0); %Compare calculated value to the old (guessed or previous calc.)  value
 
     if dd > 0.01
         q = input("Would you like to alter K values?: ", 's');
